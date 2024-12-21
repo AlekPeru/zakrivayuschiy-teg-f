@@ -1,82 +1,36 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-dark {
+	--title-font-weight: 785;
+	--content-font-weight: 465;
+	--content-color: #00CC14;
+	--background-color: #000000;
+	--background-image: repeating-linear-gradient(
+        90deg,
+        #000 0 2px,
+        rgba(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(#007f0c, #004306);
+	--button-text-color: #00CC14;
+	--heart-contour-color: #00CC14;
+	--heart-fill-color: #00CC14;
+	--heart-sparks-color: #ff0000;
+	--floppy-fill-color:  #00CC14;
+}
 
 :root.theme-light {
-  --accent-color: #000;
-  --background-color: #fff;
-  --color-svg-core: #000;
-  --color-svg-counter: #000;
-  --font-family: "Inter";
-  --accent-family: "PressStart2P";
-  --wght-card-title: 700;
-  --wght-card-text: 400;
-  --hover-color-button-text: #fff;
-  --backgound-image: repeating-linear-gradient(
-      90deg,
-      #d3d3d3,
-      #d3d3d3 2px,
-      rgb(211 211 211 / 0) 2px,
-      rgb(211 211 211 / 0) 4px
-    ),
-    repeating-linear-gradient(
-      #d3d3d3,
-      #d3d3d3 2px,
-      rgb(211 211 211 / 0) 2px,
-      rgb(211 211 211 / 0) 4px
-    ),
-    linear-gradient(#e7e7e7, #1a1a1a);
-}
-
-:root.theme-dark {
-  --accent-color: #00cc14;
-  --background-color: #000;
-  --color-svg-core: #00cc14;
-  --color-svg-counter: #00cc14;
-  --wght-card-title: 785;
-  --wght-card-text: 465;
-  --hover-color-button-text: #00cc14;
-  --backgound-image: repeating-linear-gradient(
-      90deg,
-      #000,
-      #000 2px,
-      rgb(0 0 0 / 0) 2px,
-      rgb(0 0 0 / 0) 4px
-    ),
-    repeating-linear-gradient(
-      #000,
-      #000 2px,
-      rgb(0 0 0 / 0) 2px,
-      rgb(0 0 0 / 0) 4px
-    ),
-    linear-gradient(#007f0c, #004306);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #00cc14;
-    --background-color: #000;
-    --color-svg-core: #00cc14;
-    --color-svg-counter: #00cc14;
-    --wght-card-title: 785;
-    --wght-card-text: 465;
-    --hover-color-button-text: #00cc14;
-    --backgound-image: repeating-linear-gradient(
+	--content-color: #000;
+	--background-color: #fff;
+	--background-image:  repeating-linear-gradient(
         90deg,
-        #000,
-        #000 2px,
-        rgb(0 0 0 / 0) 2px,
-        rgb(0 0 0 / 0) 4px
-      ),
-      repeating-linear-gradient(
-        #000,
-        #000 2px,
-        rgb(0 0 0 / 0) 2px,
-        rgb(0 0 0 / 0) 4px
-      ),
-      linear-gradient(#007f0c, #004306);
-  }
+        #d3d3d3 0 2px,
+        rgba(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+
+	--button-text-color: #fff;
+	--heart-contour-color: #000;
+	--heart-fill-color: #ff0000;
+	--heart-sparks-color: #ff0000;
+	--floppy-fill-color: #fff;
 }
