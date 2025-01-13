@@ -1,1 +1,3 @@
-https://github.com/DaryaSave/zakrivayuschiy-teg-f.git
+# zakrivayuschiy-teg-f
+Проект "Закрывающий тег"
+https://github.com/AlekPeru/zakrivayuschiy-teg-f.git
